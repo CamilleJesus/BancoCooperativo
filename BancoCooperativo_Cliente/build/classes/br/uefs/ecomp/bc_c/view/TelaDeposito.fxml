@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane fx:id="telaDeposito" animated="false" collapsible="false" prefHeight="200.0" prefWidth="200.0" text="Depositar" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uefs.ecomp.bc_c.view.TelaController">
+   <content>
+      <AnchorPane fx:id="paneDeposito" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="fieldNumeroContaDeposito" focusTraversable="false" layoutX="26.0" layoutY="43.0" promptText="Numero da Conta..." />
+            <TextField fx:id="fieldValorDeposito" focusTraversable="false" layoutX="26.0" layoutY="81.0" promptText="Valor..." />
+            <Button fx:id="buttonOkDeposito" focusTraversable="false" layoutX="143.0" layoutY="123.0" mnemonicParsing="false" onAction="#clicarDepositarTelaDeposito" text="Ok" />
+            <Hyperlink fx:id="linkSairDeposito" focusTraversable="false" layoutX="26.0" layoutY="124.0" onAction="#clicarSairTelaDeposito" text="Sair" />
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>

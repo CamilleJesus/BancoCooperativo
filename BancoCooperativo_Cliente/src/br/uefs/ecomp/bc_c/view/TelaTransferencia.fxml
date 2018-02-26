@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane fx:id="telaTranferencia" animated="false" collapsible="false" prefHeight="200.0" prefWidth="200.0" text="Transferir" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uefs.ecomp.bc_c.view.TelaController">
+   <content>
+      <AnchorPane fx:id="paneTranferencia" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="fieldNumeroContaTranferencia" focusTraversable="false" layoutX="26.0" layoutY="43.0" promptText="Numero da Conta..." />
+            <TextField fx:id="fieldValorTranferencia" focusTraversable="false" layoutX="26.0" layoutY="81.0" promptText="Valor..." />
+            <Button fx:id="buttonOkTranferencia" focusTraversable="false" layoutX="143.0" layoutY="123.0" mnemonicParsing="false" onAction="#clicarTransferirTelaTranferencia" text="Ok" />
+            <Hyperlink fx:id="linkSairTranferencia" focusTraversable="false" layoutX="26.0" layoutY="124.0" onAction="#clicarSairTelaTranferencia" text="Sair" />
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>

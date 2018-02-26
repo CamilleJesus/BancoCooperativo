@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane fx:id="telaAcesso" collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" text="Acesso" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uefs.ecomp.bc_c.view.TelaController">
+   <content>
+      <SplitPane fx:id="paneAcesso" dividerPositions="0.6021897810218978" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+        <items>
+          <AnchorPane fx:id="pane1Acesso" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="bemvindoAcesso" layoutX="14.0" layoutY="14.0" text="Bem-vindo!" />
+                  <Label fx:id="labelTipoAcesso" layoutX="34.0" layoutY="50.0" text="Tipo:  " />
+                  <Label fx:id="labelNumeroContaAcesso" layoutX="34.0" layoutY="78.0" text="Número: " />
+                  <Label fx:id="labelTitularesAcesso" layoutX="34.0" layoutY="103.0" text="Titulares: " />
+                  <Label fx:id="tipoContaAcesso" layoutX="94.0" layoutY="50.0" prefHeight="17.0" prefWidth="93.0" />
+                  <Label fx:id="numeroContaAcesso" layoutX="94.0" layoutY="78.0" prefHeight="17.0" prefWidth="78.0" />
+                  <TextArea fx:id="titularesAcesso" focusTraversable="false" layoutX="94.0" layoutY="100.0" prefHeight="24.0" prefWidth="172.0" />
+                  <Label fx:id="labelSaldoAcesso" layoutX="34.0" layoutY="140.0" text="Saldo: " />
+                  <Label fx:id="saldoAcesso" layoutX="94.0" layoutY="140.0" prefHeight="17.0" prefWidth="78.0" />
+                  <Label fx:id="tipoClientesAcesso" layoutX="187.0" layoutY="50.0" prefHeight="17.0" prefWidth="95.0" />
+                  <Button fx:id="buttonVerAcesso" layoutX="249.0" layoutY="10.0" mnemonicParsing="false" onAction="#initialize" text="Ver" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="pane2Acesso" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="buttonDepositoAcesso" focusTraversable="false" layoutX="34.0" layoutY="41.0" mnemonicParsing="false" onAction="#clicarDepositoTelaAcesso" text="Depósito" />
+                  <Button fx:id="buttonTransferenciaAcesso" focusTraversable="false" layoutX="111.0" layoutY="41.0" mnemonicParsing="false" onAction="#clicarTransferenciaTelaAcesso" text="Transferência" />
+                  <Button fx:id="buttonTitularAcesso" focusTraversable="false" layoutX="212.0" layoutY="41.0" mnemonicParsing="false" onAction="#clicarTitularTelaAcesso" text="Titular" />
+                  <Hyperlink fx:id="linkSairAcesso" focusTraversable="false" layoutX="262.0" layoutY="81.0" onAction="#clicarSairTelaAcesso" text="Sair" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </content>
+</TitledPane>
